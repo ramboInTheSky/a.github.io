@@ -1,0 +1,52 @@
+{
+  "name": "stacks",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start --host 0.0.0.0",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "publish": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "lint": "node_modules/.bin/markdownlint ./docs",
+    "lint:spell:it": "node_modules/.bin/mdspell ./docs/*.md --ignore-numbers --ignore-acronyms --en-gb",
+    "lint:spell": "node_modules/.bin/mdspell --report --en-gb --ignore-numbers --ignore-acronyms --no-suggestions ./docs/*.md",
+    "validate": "node_modules/.bin/markdownlint ./docs --fix"
+  },
+  "devDependencies": {
+    "markdown-spellcheck": "^1.3.1",
+    "markdownlint": "^0.20.3",
+    "markdownlint-cli": "^0.23.1"
+  },
+  "dependencies": {
+    "@analytics/google-analytics": "^0.5.2",
+    "@docusaurus/core": "2.0.0-beta.9",
+    "@docusaurus/mdx-loader": "^2.0.0-beta.9",
+    "@docusaurus/plugin-google-analytics": "^2.0.0-beta.9",
+    "@docusaurus/plugin-google-gtag": "2.0.0-beta.9",
+    "@docusaurus/plugin-sitemap": "2.0.0-beta.9",
+    "@docusaurus/preset-classic": "2.0.0-beta.9",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-player": "^2.7.0",
+    "react-select": "3.1.0",
+    "rehype-truncate": "^1.2.1",
+    "remark-images": "^2.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
